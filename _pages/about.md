@@ -2,10 +2,10 @@
 layout: about
 title: about
 permalink: /
-subtitle: <
-a href='#'>Affiliations</a>.
-Astrophysics PhD student.
-Astrophysics Research Institute, Liverpool John Moores University. 
+subtitle: >
+  <a href="#">Affiliations</a>.
+  Astrophysics PhD student.
+  Astrophysics Research Institute, Liverpool John Moores University.
 
 profile:
   align: right
