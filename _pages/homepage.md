@@ -18,7 +18,7 @@ profile:
         <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0009-0004-4738-9022" title="ADS Publications" target="_blank" style="font-size: 1.4rem; margin-left: 10px;"><i class="ai ai-ads"></i></a>
         
         <div style="margin-top: 4px;">
-          <a href="{{ '/assets/pdf/Thomas_Baxter_CV.pdf' | relative_url }}" target="_blank" style="font-size: 1rem; text-decoration: none; font-weight: 600;">CV</a>
+          <a href="{{ '/assets/pdf/Thomas_Baxter_CV.pdf' | relative_url }}" target="_blank">CV</a>
         </div>
       </div>
 
