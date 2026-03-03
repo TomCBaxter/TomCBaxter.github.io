@@ -57,7 +57,7 @@ navbar_fixed: true
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
-posts_in_search: true
+posts_in_search: false # Disabled: no blog
 bib_search: true
 
 # Dimensions
@@ -98,10 +98,10 @@ lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false # Disabled: no blog
 
 related_blog_posts:
-  enabled: true
+  enabled: false # Disabled: no blog
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
@@ -129,16 +129,16 @@ disqus_shortname: al-folio # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+#  - name: medium.com
+#    rss_url: https://medium.com/@al-folio/feed
+#    categories: [external-posts]
+#    tags: [medium]
+#  - name: Google Blog
+#    posts:
+#      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+#        published_date: 2024-05-14
+#    categories: [external-posts]
+#    tags: [google]
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -155,15 +155,15 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false # Disabled
   news:
     defaults:
       layout: post
-    output: true
+    output: false # Disabled
   projects:
-    output: true
+    output: false # Disabled
   teachings:
-    output: true
+    output: false # Disabled
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -402,12 +402,12 @@ enable_openpanel_analytics: false # enables Openpanel analytics (https://openpan
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (https://github.com/orestbida/cookieconsent)
-enable_masonry: true # enables automatic project cards arrangement
+enable_masonry: false # Disabled: no projects
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
-enable_project_categories: true # enables categorization of projects into multiple categories
+enable_project_categories: false # Disabled: no projects
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
@@ -643,7 +643,7 @@ third_party_libraries:
   venobox:
     integrity:
       css: "sha256-ohJEB0/WsBOdBD+gQO/MGfyJSbTUI8OOLbQGdkxD6Cg="
-      js: "sha256-LsGXHsHMMmTcz3KqTaWvLv6ome+7pRiic2LPnzTfiSo="
+      js: "sha256-LsGXHsHMMmTcz3KqTaWvLv6ome+7pRiic2LPnzTfiSoSo="
     url:
       css: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.css"
       js: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.js"
