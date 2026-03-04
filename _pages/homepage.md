@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Thomas Baxter  # This is the most important change for SEO
+title: homepage  # This is the most important change for SEO
 permalink: /
 subtitle: >
   <b>Astrophysics PhD Student</b> at the 
