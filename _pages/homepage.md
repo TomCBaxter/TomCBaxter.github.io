@@ -1,6 +1,6 @@
 ---
 layout: about
-title: homepage  # This is the most important change for SEO
+title: Thomas Baxter  # This is the most important change for SEO
 permalink: /
 subtitle: >
   <b>Astrophysics PhD Student</b> at the 
@@ -35,3 +35,10 @@ latest_posts:
   scrollable: true 
   limit: 3 
 ---
+
+My research interests are ...
+- 
+- 
+
+<h2>Notes</h2>
+Here are some self-contained notes on a given topic and/or useful derivation.
