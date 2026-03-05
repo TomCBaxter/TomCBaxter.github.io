@@ -19,6 +19,11 @@ profile:
         
         <div style="margin-top: 4px;">
           <a href="{{ '/assets/pdf/Thomas_Baxter_CV.pdf' | relative_url }}" target="_blank">CV</a>
+          <a href="javascript:void(0)" onclick="window.location.href = 'mailto:' + 'aritbaxt' + '@' + 'ljmu.ac.uk';">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        </div>
         </div>
       </div>
 
@@ -37,7 +42,6 @@ latest_posts:
 ---
 
 My research interests are ...
-- 
 - 
 
 <h2>Notes</h2>
