@@ -44,6 +44,3 @@ latest_posts:
 
 <h2>Research interests</h2> 
  
-
-<h2>Notes</h2>
-Here are some self-contained notes on a given topic and/or useful derivation.
