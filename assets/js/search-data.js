@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-notes",
+          title: "notes",
+          description: "A collection of self-contained notes, derivations, and exercises.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/notes/";
+          },
         },{
         id: 'social-cv',
         title: 'CV',
