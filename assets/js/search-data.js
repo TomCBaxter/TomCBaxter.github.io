@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-notes",
           title: "Notes",
-          description: "A collection of self-contained notes, derivations, and exercises.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/notes/";
