@@ -1,0 +1,102 @@
+<style>
+  .gallery-image-container {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--global-bg-color);
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  
+  .gallery-image-container figure, 
+  .gallery-image-container picture, 
+  .gallery-image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain !important;
+    margin: 0;
+  }
+</style>
+<div id="gallery-wrapper">
+
+
+  <!-- Navigation Controls -->
+  <div class="mb-3 d-flex justify-content-between align-items-center">
+    <div>
+      <button type="button" id="prev-btn" class="btn btn-sm z-depth-0" title="Previous">
+        <i class="fa-solid fa-chevron-left"></i> Prev
+      </button>
+      <button type="button" id="next-btn" class="btn btn-sm z-depth-0" title="Next">
+        Next <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+    <button type="button" id="random-btn" class="btn btn-sm z-depth-0" title="Random">
+      <i class="fa-solid fa-shuffle"></i> Random
+    </button>
+  </div>
+
+  <!-- Images -->
+  <div id="gallery-items">
+    {% for item in site.data.gallery %}
+      <div class="card mb-3 gallery-item" style="display: none;" data-index="{{ forloop.index0 }}">
+        
+        <!-- Image wrapper with fixed height to stop page jumping -->
+        <div class="gallery-image-container">
+          {% include figure.liquid loading="eager" path=item.image class="img-fluid rounded" alt=item.title %}
+        </div>
+        
+        {% if item.title != "" or item.description != "" %}
+          <div class="card-body">
+            {% if item.title != "" %}<h5 class="card-title">{{ item.title }}</h5>{% endif %}
+            {% if item.description != "" %}<p class="card-text">{{ item.description }}</p>{% endif %}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll('.gallery-item');
+    if (items.length === 0) return;
+
+    let currentIndex = 0;
+
+    function showImage(index) {
+      items.forEach(item => item.style.display = 'none');
+      if (index >= items.length) currentIndex = 0;
+      else if (index < 0) currentIndex = items.length - 1;
+      else currentIndex = index;
+      items[currentIndex].style.display = 'block';
+    }
+
+    function showRandomImage() {
+      if (items.length <= 1) return;
+      let newIndex;
+      do {
+        newIndex = Math.floor(Math.random() * items.length);
+      } while (newIndex === currentIndex);
+      showImage(newIndex);
+    }
+
+    document.getElementById('prev-btn').addEventListener('click', (e) => {
+      e.preventDefault();
+      showImage(currentIndex - 1);
+    });
+    document.getElementById('next-btn').addEventListener('click', (e) => {
+      e.preventDefault();
+      showImage(currentIndex + 1);
+    });
+    document.getElementById('random-btn').addEventListener('click', (e) => {
+      e.preventDefault();
+      showRandomImage();
+    });
+
+    // Initialize the first image
+    showImage(0);
+  });
+</script>
+<p style="font-size: 0.8rem; color: var(--global-text-color-light); text-align: center; margin-top: 20px;">
+  <em>Images collected for non-commercial fair use.</em>
+</p>

@@ -1,0 +1,19 @@
+- image: "assets/img/gallery/skillSpecs_clawer.jpeg"
+  title: "The claw"
+  description: ""
+
+- image: "assets/img/gallery/The_Unknown_Warrior_at_Westminster_Abbey,_November_1920_Q31514.jpg"
+  title: "The Unknown Warrior"
+  description: ""
+
+- image: "assets/img/gallery/boosterRecovery.jpeg"
+  title: "Booster recovery"
+  description: "foo"
+
+- image: "assets/img/gallery/diminishingReturns.jpeg"
+  title: "Diminishing returns"
+  description: "foo"
+
+- image: "assets/img/gallery/Toros_de_Guisando.jpg"
+  title: "Toros de Guisando"
+  description: "foo"  
