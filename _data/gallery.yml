@@ -1,19 +1,23 @@
 - image: "assets/img/gallery/skillSpecs_clawer.jpeg"
   title: "The claw"
-  description: ""
+  description: "OSRS creator skill specs has a unique (and painful) F-key grip"
 
 - image: "assets/img/gallery/The_Unknown_Warrior_at_Westminster_Abbey,_November_1920_Q31514.jpg"
   title: "The Unknown Warrior"
-  description: ""
-
+  description: "Coffin of an unidentified british soilder killed in WW1, at Westminster Abbey. Buried with soil from the various battlegrounds of the war, and symbolic of all (or just unidentified?) fallen soilders in WW1."
+  
 - image: "assets/img/gallery/boosterRecovery.jpeg"
   title: "Booster recovery"
-  description: "foo"
+  description: "Starship Super Heavy booster being recovered."
 
 - image: "assets/img/gallery/diminishingReturns.jpeg"
   title: "Diminishing returns"
-  description: "foo"
+  description: "PS1 era lara croft 3D model has around 500 trianges from reference."
 
 - image: "assets/img/gallery/Toros_de_Guisando.jpg"
   title: "Toros de Guisando"
-  description: "foo"  
+  description: "Iron age (~200BC) sculptures in the modern province of Ávila, West-Central Spain."  
+
+- image: "assets/img/gallery/UKscheduledMonuments.jpeg"
+  title: "UK scheduled monuments"
+  description: "Historic England map of scheduled monumnets in the UK. The lines near the border of scotland and further north, which are Hadrian's wall and Antonine wall respectively."  
