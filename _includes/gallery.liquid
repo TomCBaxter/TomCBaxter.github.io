@@ -16,6 +16,12 @@
     object-fit: contain !important;
     margin: 0;
   }
+
+  /* Restrict the height of the card body and allow it to scroll */
+  .gallery-item .card-body {
+    max-height: 150px;
+    overflow-y: auto;
+  }
 </style>
 <div id="gallery-wrapper">
 
@@ -48,7 +54,7 @@
         {% if item.title != "" or item.description != "" %}
           <div class="card-body">
             {% if item.title != "" %}<h5 class="card-title">{{ item.title }}</h5>{% endif %}
-            {% if item.description != "" %}<p class="card-text">{{ item.description }}</p>{% endif %}
+            {% if item.description != "" %}<div class="card-text">{{ item.description | markdownify }}</div>{% endif %}
           </div>
         {% endif %}
       </div>
