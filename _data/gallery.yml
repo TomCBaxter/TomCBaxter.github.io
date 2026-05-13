@@ -4,15 +4,15 @@
 
 - image: "assets/img/gallery/The_Unknown_Warrior_at_Westminster_Abbey,_November_1920_Q31514.jpg"
   title: "The Unknown Warrior"
-  description: "Coffin of an unidentified british soilder killed in WW1, at Westminster Abbey. Buried with soil from the various battlegrounds of the war, and symbolic of all (or just unidentified?) fallen soilders in WW1."
-  
+  description: "Coffin of an unidentified british soilder killed in WW1, at Westminster Abbey. Buried with soil from the various battlegrounds of the war. Symbolic of all (or just unidentified?) fallen soilders in WW1."
+
 - image: "assets/img/gallery/boosterRecovery.jpeg"
   title: "Booster recovery"
   description: "Starship Super Heavy booster being recovered."
 
 - image: "assets/img/gallery/diminishingReturns.jpeg"
   title: "Diminishing returns"
-  description: "PS1 era lara croft 3D model has around 500 trianges from reference."
+  description: "PS1 era lara croft 3D model has around 500 trianges for reference."
 
 - image: "assets/img/gallery/Toros_de_Guisando.jpg"
   title: "Toros de Guisando"
@@ -20,4 +20,4 @@
 
 - image: "assets/img/gallery/UKscheduledMonuments.jpeg"
   title: "UK scheduled monuments"
-  description: "Historic England map of scheduled monumnets in the UK. The lines near the border of scotland and further north, which are Hadrian's wall and Antonine wall respectively."  
+  description: "Historic England map of scheduled monumnets in the UK. The lines near the border of scotland and further north, which are Hadrian's wall (began ~120AD) and Antonine wall (began ~142AD) respectively."  
