@@ -22,6 +22,17 @@
     max-height: 150px;
     overflow-y: auto;
   }
+  
+  /* Styling for the gallery title separator and description */
+  .gallery-item hr {
+    margin: 0.5rem 0 0.75rem 0;
+    border-top: 1px solid var(--global-divider-color);
+    opacity: 0.5;
+  }
+  .gallery-item .gallery-description {
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+  }
 </style>
 <div id="gallery-wrapper">
 
@@ -54,7 +65,8 @@
         {% if item.title != "" or item.description != "" %}
           <div class="card-body">
             {% if item.title != "" %}<h5 class="card-title">{{ item.title }}</h5>{% endif %}
-            {% if item.description != "" %}<div class="card-text">{{ item.description | markdownify }}</div>{% endif %}
+            {% if item.title != "" and item.description != "" %}<hr>{% endif %}
+            {% if item.description != "" %}<div class="card-text gallery-description">{{ item.description | markdownify }}</div>{% endif %}
           </div>
         {% endif %}
       </div>

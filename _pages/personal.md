@@ -6,7 +6,7 @@ nav: true
 nav_order: 5
 ---
 
-## Cabinet of curiosities
+## Cabinet of Curiosities
 
 <div class="mt-5">
   {% include gallery.liquid %}
