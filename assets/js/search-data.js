@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-thomas-baxter",
-    title: "Thomas Baxter",
+    id: "nav-thomas-baxter-astrophysics",
+    title: "Thomas Baxter - Astrophysics",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
