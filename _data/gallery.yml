@@ -4,7 +4,10 @@
 
 - image: "assets/img/gallery/UKscheduledMonuments.jpeg"
   title: "UK scheduled monuments"
-  description: "Historic England map of scheduled monumnets in the UK. The lines near the England-Scotland border and further north are Hadrian's wall (began ~120AD) and Antonine wall (began ~142AD) respectively."  
+  description: >
+    Historic England map of scheduled monumnets in the UK. 
+    The lines near the England-Scotland border and further north are Hadrian's wall (began ~120AD) and Antonine wall (began ~142AD) respectively.  
+    The sparse spot in East Anglia roughly marks out "The Fens". Nowadays this is reclaimed land, due to draining, but historically would have been marshland.
 
 - image: "assets/img/gallery/skillSpecs_clawer.jpeg"
   title: "The claw"
