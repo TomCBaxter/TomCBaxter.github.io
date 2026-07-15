@@ -1,11 +1,11 @@
 - id: "caltech-2025"
-  title: "Caltech Research Visit"
+  title: "Caltech Relativistic Astrophysics Workshop"
   location: "Pasadena"
   date: "2025-03-15"
-  folder: "caltech-2025" # This matches your folder name
+  folder: "assets/img/trips/2025_caltech" 
 
-- id: "warwick-2025"
-  title: "Warwick Symposium"
-  location: "Coventry"
-  date: "2025-06-10"
-  folder: "warwick-2025"
+# - id: "warwick-2025"
+#   title: "Warwick Symposium"
+#   location: "Coventry"
+#   date: "2025-06-10"
+#   folder: "warwick-2025"
