@@ -1,4 +1,5 @@
 _site
+lighthouse_results/
 .bundle
 .DS_store
 .idea
