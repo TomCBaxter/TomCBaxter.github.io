@@ -165,6 +165,31 @@ li em { order: 3; font-style: italic; }
 li::after { content: ""; order: 2; flex: 1; border-bottom: 1px dotted #5a4a40; margin: 0 .5em; }
 ```
 
+## Colour rules (chosen palette: Old parchment + walnut)
+
+The site uses Koberlein's typography and layout on a light parchment background instead of his dark one. It looks the same in light and dark mode. All colours live in section 1 of `style.css`, named by their job:
+
+| Variable | Colour | Job |
+|---|---|---|
+| `--bg` | `#f2e8d5` parchment | page background |
+| `--text` | `#3a2e24` walnut ink | body text |
+| `--title` | `#2a1f16` dark brown | headings, links |
+| `--muted` | `#6a5c4e` | nav, captions, dates |
+| `--accent` | `#5c3d2e` walnut | heading lines, subtitle rule, link hover |
+| `--rule` | `#c2ad88` tan | dotted leaders, link underlines |
+| `--star` | `#8b3a2b` oxblood | favourites (★) only |
+
+Spare accents for later, all readable on parchment: olive `#5f6b2e`, slate blue `#3d5a73`, ochre `#7a5912`, forest `#3f5e3a`, plum `#6b3a5a`.
+
+Rules for adding colours:
+
+1. Name a variable by its job (`--tag-physics`), never its hue (`--blue`).
+2. One main accent plus at most 2–3 extras, each with one fixed meaning.
+3. Pick from the spare family above: earthy, slightly greyed, similarly dark.
+4. Text colours need a contrast ratio of at least 4.5 against `#f2e8d5`.
+5. Never rely on colour alone: pair it with a symbol or a word (★, a label).
+6. Only add a colour when a page actually needs it, and record it in this table.
+
 ## Bookshelf conventions (books.md)
 
 - Group by year, newest first.

@@ -1,0 +1,31 @@
+<!doctype html>
+<!-- The one shared layout. Every page is wrapped in this.
+     Double curly braces insert a value; "if ... endif" tags show something only when true.
+     Values come from _config.yml (site.*) and each page's front matter (page.*). -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.url == "/" %}{{ site.title }} · Astrophysics{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="icon" href="/assets/img/RobinHoodStone.jpg">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <!-- aria-current marks the page you're on, so the CSS can highlight it -->
+    <nav>
+      <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a>
+      <a href="/notes/"{% if page.url == "/notes/" %} aria-current="page"{% endif %}>Notes</a>
+      <a href="/personal/"{% if page.url == "/personal/" %} aria-current="page"{% endif %}>Personal</a>
+      <a href="/cv/"{% if page.url == "/cv/" %} aria-current="page"{% endif %}>CV</a>
+    </nav>
+
+    {% if page.image %}<img class="portrait" src="{{ page.image }}" alt="Photo of {{ site.title }}">{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+
+    {{ content }}
+
+    <footer>© {{ site.time | date: "%Y" }} {{ site.title }}</footer>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+# Site-wide settings. Pages and the layout can read these as site.title etc.
+title: Thomas Baxter
+description: PhD astrophysics student at the Astrophysics Research Institute, Liverpool John Moores University.
+
+# Converts Markdown (.md) to HTML. kramdown is GitHub Pages' default.
+markdown: kramdown
+
+# Files in the repo that should NOT be published as part of the site.
+exclude:
+  - REDESIGN.md
+  - CLAUDE.md
+  - node_modules

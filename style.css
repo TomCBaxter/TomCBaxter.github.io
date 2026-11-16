@@ -1,0 +1,224 @@
+/* =========================================================
+   style.css: all styling for every page of the site.
+   Inspired by briankoberlein.com.
+   ========================================================= */
+
+/* Fonts from Google Fonts: Cinzel (spaced capitals for titles/nav)
+   and Cormorant Garamond (body text). Free stand-ins for Hoefler Titling. */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap");
+
+/* ---------- 1. Colours ----------
+   The only block to edit when changing the palette.
+   "Old parchment" with walnut accents; the same in light and dark mode.
+   Colours are named by their JOB, not their hue. Rules for adding new
+   ones are in REDESIGN.md under "Colour rules". */
+:root {
+  color-scheme: light;  /* tells the browser this is a light page (scrollbars etc.) */
+  --bg: #f2e8d5;        /* page background: parchment */
+  --text: #3a2e24;      /* body text: walnut ink */
+  --title: #2a1f16;     /* headings and links: darkest brown */
+  --muted: #6a5c4e;     /* nav, captions, dates */
+  --accent: #5c3d2e;    /* main accent: heading lines, subtitle rule, link hover */
+  --rule: #c2ad88;      /* faint tan lines: dotted leaders, link underlines */
+  --star: #8b3a2b;      /* oxblood: favourites (★) only */
+}
+
+/* ---------- 2. The page ---------- */
+html {
+  background: var(--bg);
+}
+body {
+  color: var(--text);
+  font: 400 1.2rem/1.6 "Cormorant Garamond", Georgia, serif;
+  max-width: 46rem;        /* one centred column, ~70 characters per line */
+  margin: 0 auto;
+  padding: 2.5rem 1rem 4rem;
+}
+a {
+  color: var(--title);
+  text-decoration: none;   /* no underline... */
+  border-bottom: 1px solid var(--rule); /* ...just a faint line so links are still visible */
+}
+a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ---------- 3. Navigation (text links at the top of every page) ---------- */
+nav {
+  text-align: center;
+  font: 400 0.75rem Cinzel, serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+nav a {
+  color: var(--muted);
+  border: 0;
+  margin: 0 0.7em;
+}
+nav a[aria-current="page"] {
+  color: var(--title); /* highlights the page you are on */
+}
+
+/* ---------- 4. Headings ---------- */
+h1 {
+  font: 400 clamp(2.2rem, 7vw, 3.6rem)/1.1 Cinzel, serif; /* shrinks on phones */
+  letter-spacing: 0.12em;
+  color: var(--title);
+  text-align: center;
+  margin: 0 0 1rem;
+}
+/* Italic line under the title, with a short accent rule above it */
+.subtitle {
+  position: relative;
+  text-align: center;
+  font-style: italic;
+  color: var(--muted);
+  max-width: 34rem;
+  margin: 0 auto 3rem;
+  padding-top: 1.5rem;
+}
+.subtitle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  margin-left: -50px;
+  border-top: 1px solid var(--accent);
+}
+/* Section headings with a line either side:  ——— NOTES ——— */
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font: 400 1rem Cinzel, serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--title);
+  margin: 3rem 0 1.2rem;
+}
+h2::before,
+h2::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--accent);
+}
+
+/* ---------- 5. Lists ----------
+   Bullet lists (Markdown "- ...") are "table of contents" lists:
+   Title ........ italic note
+   In Markdown:  - [Title](link) *note*  */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.3rem;
+}
+ul li::after {               /* the dotted leader between title and note */
+  content: "";
+  order: 2;
+  flex: 1;
+  border-bottom: 1px dotted var(--rule);
+  margin: 0 0.5em;
+}
+ul li em {
+  order: 3;                  /* moves the italic note to the right-hand end */
+  color: var(--muted);
+  white-space: nowrap;
+}
+/* Favourites: in Markdown write  <span class="star">★</span>  after the title */
+.star {
+  color: var(--star);
+  margin-left: 0.3em;
+}
+/* Numbered lists (Markdown "1. ...") are used for papers */
+ol {
+  padding-left: 1.4rem;
+}
+ol li {
+  margin-bottom: 1rem;
+}
+ol li p {
+  margin: 0;                 /* Markdown wraps each item in a paragraph; drop its extra spacing */
+}
+
+/* Fold-out boxes (<details>) used for trips */
+details {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 0.6rem 0;
+  margin-bottom: 1rem;
+}
+summary {
+  cursor: pointer;
+  color: var(--title);
+}
+summary em {
+  color: var(--muted);
+  margin-left: 0.4em;
+}
+details .gallery {
+  margin-top: 1rem;
+}
+
+/* ---------- 6. Homepage photo and links ---------- */
+.portrait {
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+  border-radius: 50%;      /* circle crop */
+  margin: 0 auto 2rem;
+}
+.links {
+  text-align: center;
+  font: 400 0.8rem Cinzel, serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.links a {
+  margin: 0 0.6em;
+}
+
+/* ---------- 7. Gallery (Cabinet of Curiosities) ---------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+  gap: 2rem;
+}
+figure {
+  margin: 0;
+}
+figure a {
+  border: 0;
+}
+figure img,
+.wide {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+figcaption {
+  font-size: 1rem;
+  line-height: 1.45;
+  color: var(--muted);
+  margin-top: 0.6rem;
+}
+figcaption strong {
+  display: block;
+  color: var(--title);
+  font-weight: 500;
+}
+
+/* ---------- 8. Footer ---------- */
+footer {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
