@@ -2,7 +2,7 @@
 layout: default
 title: Cabinet of Curiosities
 permalink: /personal/cabinet/
-subtitle: Things I find interesting, odd or beautiful.
+subtitle:   # optional: one line shown under the title, e.g. subtitle: Things I find interesting.
 ---
 
 <!-- The items come from _data/gallery.yml: edit that file to add, remove or reorder them.

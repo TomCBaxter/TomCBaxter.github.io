@@ -69,6 +69,10 @@ h1 {
   text-align: center;
   margin: 0 0 1rem;
 }
+/* Pages without a subtitle: leave the same breathing room under the title */
+h1 + :not(.subtitle) {
+  margin-top: 3rem;
+}
 /* Italic line under the title, with a short accent rule above it */
 .subtitle {
   position: relative;
@@ -219,6 +223,21 @@ figcaption strong {
 }
 figcaption p {
   margin: 0.2rem 0 0;        /* captions are Markdown, which wraps them in a paragraph */
+}
+/* Media page: creator · year line, and the small "more" fold-out */
+figcaption .meta {
+  display: block;
+  font-style: italic;
+}
+figcaption details {
+  border: 0;                 /* undo the Trips box style */
+  padding: 0;
+  margin: 0.3rem 0 0;
+}
+figcaption summary {
+  color: var(--muted);
+  font-size: 0.9em;
+  font-style: italic;
 }
 
 /* ---------- 8. Footer ---------- */

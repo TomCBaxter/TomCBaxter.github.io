@@ -2,7 +2,7 @@
 layout: default
 title: Blogs
 permalink: /personal/blogs/
-subtitle: Blogs I read.
+subtitle:   # optional: one line shown under the title, e.g. subtitle: Things I find interesting.
 ---
 
 - [What's new](https://terrytao.wordpress.com/) *Terence Tao*

@@ -15,9 +15,11 @@
     <!-- aria-current marks the page you're on, so the CSS can highlight it -->
     <nav>
       <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a>
-      <a href="/notes/"{% if page.url == "/notes/" %} aria-current="page"{% endif %}>Notes</a>
-      <a href="/personal/"{% if page.url contains "/personal/" %} aria-current="page"{% endif %}>Personal</a>
       <a href="/cv/"{% if page.url == "/cv/" %} aria-current="page"{% endif %}>CV</a>
+      {% comment %} Notes hidden from the nav for now; delete this comment tag and its end tag to bring it back.
+      <a href="/notes/"{% if page.url == "/notes/" %} aria-current="page"{% endif %}>Notes</a>
+      {% endcomment %}
+      <a href="/personal/"{% if page.url contains "/personal/" %} aria-current="page"{% endif %}>Personal</a>
     </nav>
 
     {% if page.image %}<img class="portrait" src="{{ page.image }}" alt="Photo of {{ site.title }}">{% endif %}

@@ -29,7 +29,7 @@ personal.md            contents page linking to the sections below -> /personal/
 personal/cabinet.md    cabinet of curiosities (items in _data/gallery.yml) -> /personal/cabinet/
 personal/trips.md      trips, one fold-out box each               -> /personal/trips/
 personal/blogs.md      blogs I read                               -> /personal/blogs/
-books.md               NEW bookshelf / reading log    -> permalink: /books/
+personal/media.md      books, films, games… (items in _data/media.yml) -> /personal/media/
 cv.md                  link/embed CV PDF              -> permalink: /cv/
 404.md
 assets/                keep existing img/, pdf/, html/relativity.html
@@ -200,7 +200,13 @@ Rules for adding colours:
 - Lines starting with `#` in `gallery.yml` are private notes and never published.
 - Housekeeping (optional, now and then): shrink oversized images with macOS's built-in `sips`, e.g. `sips -Z 1600 assets/img/gallery/big_photo.jpg` (max 1600 px on the long side). Save photos as JPEG, not PNG.
 
-## Bookshelf conventions (books.md)
+## Media (books, films, games…)
+
+- Replaces the separate bookshelf idea: books are one section of `/personal/media/`.
+- Items live in `_data/media.yml` (`section`, `title`, optional `by`, `year`, `image`, `short`, `more`, `favourite`); images go in `assets/img/media/`. Same masonry look as the Cabinet; `more` is a fold-out (`<details>`), no JavaScript.
+- The bookshelf conventions below still apply to the Books section where useful (★ favourites, short notes).
+
+## Bookshelf conventions (originally for books.md)
 
 - Group by year, newest first.
 - One line per book: title (linked if useful), then *author* on the right.

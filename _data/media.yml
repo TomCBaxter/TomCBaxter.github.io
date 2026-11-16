@@ -1,0 +1,20 @@
+# Media: books, films, games and other things, shown on /personal/media/.
+#
+# Items are grouped under a heading by their "section" (Books, Films, Games, …).
+# Sections appear in the order they first appear in this file; items of the
+# same section are gathered together automatically. A new section name
+# creates a new heading.
+#
+# To add an item, put any image in assets/img/media/ and add a block:
+#
+# - section: Films                # heading it appears under
+#   title: Stalker
+#   by: Andrei Tarkovsky          # optional: author, director, studio…
+#   year: 1979                    # optional
+#   image: stalker.jpg            # optional; any size or shape
+#   short: One line, always shown.
+#   more: >                       # optional; hidden behind a "more" fold-out
+#     Longer notes. Markdown works, e.g. [a link](https://example.com).
+#   favourite: true               # optional; adds an oxblood ★
+#
+# Lines starting with # are notes and never appear on the site.
