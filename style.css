@@ -185,14 +185,17 @@ details .gallery {
   margin: 0 0.6em;
 }
 
-/* ---------- 7. Gallery (Cabinet of Curiosities) ---------- */
+/* ---------- 7. Gallery (Cabinet of Curiosities) ----------
+   "Masonry": images keep their own shape and stack in columns,
+   like a newspaper. Columns are at least 14rem wide, so 2 on a
+   laptop and 1 on a phone; no per-image sizing needed. */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
-  gap: 2rem;
+  columns: 14rem;
+  column-gap: 2rem;
 }
 figure {
-  margin: 0;
+  margin: 0 0 2rem;
+  break-inside: avoid;       /* keep each image and its caption together */
 }
 figure a {
   border: 0;
@@ -213,6 +216,9 @@ figcaption strong {
   display: block;
   color: var(--title);
   font-weight: 500;
+}
+figcaption p {
+  margin: 0.2rem 0 0;        /* captions are Markdown, which wraps them in a paragraph */
 }
 
 /* ---------- 8. Footer ---------- */

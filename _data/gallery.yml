@@ -1,0 +1,135 @@
+# The Cabinet of Curiosities, shown on /personal/ in this order.
+#
+# To add an item: put the image in assets/img/gallery/, then add a block:
+#
+# - image: my_photo.jpg
+#   title: Short title
+#   caption: >
+#     Optional longer text. Markdown works, e.g. [a link](https://example.com).
+#
+# Lines starting with # are notes and never appear on the site.
+
+- image: UKscheduledMonuments.jpeg
+  title: UK scheduled monuments
+  caption: >
+    Historic England map of scheduled monuments in the UK. The lines near the England–Scotland border and further north are Hadrian's Wall (begun ~120 AD) and the Antonine Wall (begun ~142 AD) respectively. The sparse spot in East Anglia roughly marks out "The Fens". Nowadays this is reclaimed land, due to draining, but historically it would have been marshland.
+
+- image: skillSpecs_clawer.jpeg
+  title: The claw
+  caption: >
+    OSRS creator skill specs has a unique (and painful) F-key grip.
+
+- image: unknown_warrior.jpg
+  title: The Unknown Warrior (1920)
+  caption: >
+    Coffin of an unidentified British soldier killed in WW1, at Westminster Abbey. Buried with soil from the various battlegrounds of the war. Symbolic of all (or just unidentified?) fallen soldiers in WW1.
+
+- image: boosterRecovery.jpeg
+  title: Booster recovery
+  caption: >
+    Starship Super Heavy booster being recovered.
+
+- image: diminishingReturns.jpeg
+  title: Diminishing returns
+  caption: >
+    The PS1-era Lara Croft 3D model has around 500 triangles, for reference.
+
+- image: Toros_de_Guisando.jpg
+  title: Toros de Guisando
+  caption: >
+    Iron Age (~200 BC) sculptures in the modern province of Ávila, west-central Spain.
+
+- image: taq_kasra.jpg
+  title: Tāq Kasrā (1950)
+  caption: >
+    Ruins of the only visible structure (~200–500 AD?) in the capital city of the Parthian and Sassanian empires, in modern-day Iraq.
+
+- image: tongue-protruding.webp
+  title: Boa Island figures
+  caption: >
+    Two stone carvings, resembling pagan gods, at a (later) ancient Christian graveyard on Boa Island, County Fermanagh, Ireland. The magic of the place is shown in the [video](https://www.youtube.com/watch?v=DSpoPBb8LAg) of Seamus Heaney reciting his poem ['January God'](https://www.carrowkeel.com/sites/misc/boa.html) while passing through the fog-filled graveyard hosting the figures.
+
+- image: Custom_House.jpg
+  title: Liverpool Custom House
+  caption: >
+    Top: the Custom House (1954). Bottom left: after the WW2 Blitz. Bottom right: modern Liverpool ONE. Originally built (c. 1839) on the site of the old dock and demolished in 1948 following damage from the Liverpool Blitz. The Liverpool Overhead Railway in front, known colloquially as the "Dockers' Umbrella", was also sadly demolished.
+
+- image: rodney_pontins.jpeg
+  title: Nicholas Lyndhurst (Rodney Trotter) in Pontins with his Mum (1976)
+  caption: >
+    I would imagine this is shortly after being forced to perform the 1970s equivalent of the cha-cha slide on an empty dancefloor by his mother.
+
+- image: job_search.jpeg
+  title: "How's the postdoc search going?"
+
+- image: rochdale_town_hall.webp
+  title: Detail of Rochdale Town Hall (c. 1871) interior
+  caption: >
+    There was a story I heard (it turned out to be a folktale) that Hitler liked this building so much that, if Operation Sea Lion had succeeded, it was to be moved brick by brick to Germany.
+
+- image: gerrard_LacosteBeast.jpeg
+  title: "Steven Gerrard's Lacoste beast (1998?)"
+  caption: >
+    Steven Gerrard visiting his old school, Cardinal Heenan in West Derby, Liverpool. The highlight of course is the Lacoste pullover and the skinheads in the back. A few more lovely pieces: [1](/assets/img/gallery/lacoste/1.webp), [2](/assets/img/gallery/lacoste/2.jpg), [3](/assets/img/gallery/lacoste/3.webp), [4](/assets/img/gallery/lacoste/4.webp).
+
+- image: beasts.jpg
+  title: Sunday best
+  caption: >
+    Rocking up to your Nan's on Easter in these.
+
+- image: exchange_building_1970.jpg
+  title: "Exchange Building façade, old (1970) and new"
+  caption: >
+    This is not a modern = bad argument. In isolation the new one isn't too bad, more open for offices and so on… Simply, which one would you rather walk past on your way to work each day?
+
+- image: star_carr_mask.jpg
+  title: Star Carr antler mask (British Museum)
+  # Draft note: 1) age of them 2) connection/continuation of ritualistic use -> folkloric tradition with the church dancing (somewhere in Yorkshire?)
+
+- image: thelads.jpeg
+  title: The lads
+  # Draft note: From left to right: ...
+
+- image: halsall_canal_sculpture.jpg
+  title: Halsall canal sculpture
+  # Draft note: bit of history of that particular cutting
+
+- image: pieta_hallwyl.jpg
+  title: Pietà (Hallwyl Museum)
+  # Draft note: Find painting from Walker where this is in the background... I really like the idea of objects of significance in the background of images or scenes.
+
+- image: fayum_portrait.jpg
+  title: Fayum mummy portrait
+
+- image: san_miguel_de_lillo.jpg
+  title: Iglesia de San Miguel de Lillo
+
+- image: grundtvig_church.jpg
+  title: "Grundtvig's Church (P. V. Jensen-Klint, 1913–1940)"
+
+- image: sis_building.jpg
+  title: "SIS Building, Vauxhall Cross"
+
+- image: pencil_bollard.jpg
+  title: School pencil bollard
+
+- image: van_castle.jpg
+  title: "Van Fortress, Turkey"
+
+- image: zelena_hora.jpg
+  title: "Zelená hora, Žďár nad Sázavou"
+
+- image: rudston_stone.jpg
+  title: Rudston church standing stone
+
+- image: bewcastle_cross.jpg
+  title: The Bewcastle Cross (7th century)
+
+- image: polarisation_rubber_band.jpeg
+  title: Polarisation with a rubber band
+
+- image: to_care_so_much.jpg
+  title: To care so much
+
+- image: delivery_photo.webp
+  title: Delivery photo

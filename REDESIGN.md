@@ -25,7 +25,10 @@ _layouts/default.html  one template: <head>, nav, {{ content }}, footer
 style.css              all styling (~60–100 lines)
 index.md               bio, photo, research interests, papers, links (ORCID, ADS, CV, email)
 notes.md               PDF notes/derivations          -> permalink: /notes/
-personal.md            cabinet of curiosities + blogs -> permalink: /personal/
+personal.md            contents page linking to the sections below -> /personal/
+personal/cabinet.md    cabinet of curiosities (items in _data/gallery.yml) -> /personal/cabinet/
+personal/trips.md      trips, one fold-out box each               -> /personal/trips/
+personal/blogs.md      blogs I read                               -> /personal/blogs/
 books.md               NEW bookshelf / reading log    -> permalink: /books/
 cv.md                  link/embed CV PDF              -> permalink: /cv/
 404.md
@@ -189,6 +192,13 @@ Rules for adding colours:
 4. Text colours need a contrast ratio of at least 4.5 against `#f2e8d5`.
 5. Never rely on colour alone: pair it with a symbol or a word (★, a label).
 6. Only add a colour when a page actually needs it, and record it in this table.
+
+## Gallery (Cabinet of Curiosities)
+
+- The items live in `_data/gallery.yml`, one block each (`image`, `title`, optional `caption` in Markdown). `personal.md` loops over that list, so the page itself never needs editing.
+- To add one, drop the image into `assets/img/gallery/` and add a block to `gallery.yml`. Any size or shape works: the masonry columns lay it out automatically.
+- Lines starting with `#` in `gallery.yml` are private notes and never published.
+- Housekeeping (optional, now and then): shrink oversized images with macOS's built-in `sips`, e.g. `sips -Z 1600 assets/img/gallery/big_photo.jpg` (max 1600 px on the long side). Save photos as JPEG, not PNG.
 
 ## Bookshelf conventions (books.md)
 

@@ -9,4 +9,4 @@ markdown: kramdown
 exclude:
   - REDESIGN.md
   - CLAUDE.md
-  - node_modules
+  - README.md

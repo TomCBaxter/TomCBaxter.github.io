@@ -16,7 +16,7 @@
     <nav>
       <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a>
       <a href="/notes/"{% if page.url == "/notes/" %} aria-current="page"{% endif %}>Notes</a>
-      <a href="/personal/"{% if page.url == "/personal/" %} aria-current="page"{% endif %}>Personal</a>
+      <a href="/personal/"{% if page.url contains "/personal/" %} aria-current="page"{% endif %}>Personal</a>
       <a href="/cv/"{% if page.url == "/cv/" %} aria-current="page"{% endif %}>CV</a>
     </nav>
 

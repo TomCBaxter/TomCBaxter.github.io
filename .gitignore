@@ -3,7 +3,5 @@
 # Jekyll output and caches (rebuilt automatically)
 _site/
 .jekyll-cache/
-# Leftovers from the old al-folio setup
-node_modules/
 # Local AI-assistant settings
 .claude/
